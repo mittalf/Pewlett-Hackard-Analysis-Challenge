@@ -19,30 +19,30 @@ This analysis will future proof HP by generating a list of all employees who are
 
 ### Purpose:
 
-Since the initial analysis determined that a lot of employees will be eligible for retirement, the company wants to do additional analysis to determine  
-	- The Number of Retiring Employees by Title
-	- The Employees Eligible for the Mentorship Program to train the new hires
+Since the initial analysis determined that a lot of employees will be eligible for retirement, the company wants to do additional analysis to determine:  
+- The Number of Retiring Employees by Title
+- The Employees Eligible for the Mentorship Program to train the new hires
 
 
 ## Source:
 
-	- ProsgreSQL
-	- PGAdmin
+- ProsgreSQL
+- PGAdmin
 
 ## Analysis/Results:
 
 Currently the employee information is available in CSV files, mainly Excel and VBA is used to work with the data. 
-Now company is upgrading to SQL. Project involves building employee database with SQL queries [Employee_Database_Chalenge.sql](Queries/Employee_Database_Chalenge.sql) by applying data modeling, engineering, and analysis skills. Entity Relationship Diagram (ERD) [EmployeeDB.png](employeeDB.png) was created to help with the analysis.
+Now company is upgrading to SQL. Project involves building employee database with SQL queries [Employee_Database_Challenge.sql](Queries/Employee_Database_Challenge.sql) by applying data modeling, engineering, and analysis skills. Entity Relationship Diagram (ERD) [EmployeeDB.png](EmployeeDB.png) was created to help with the analysis.
 
 The Number of Retiring Employees by Title:
 
-1. Using the ERD, created a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. [Retirement_titles.csv](Data/Retirement_titles.csv)
-2. Using the DISTINCT ON statement created a table that contains the most recent title of each employee. [Unique_titles.csv](Data/Unique_titles.csv)
-3. Created a final table that has the number of retirement-age employees by most recent job title using the count function.[Retiring_titles.csv](Data/Retiring_titles.csv)
+1. Using the ERD, created a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. [retirement_titles.csv](Data/retirement_titles.csv)
+2. Using the DISTINCT ON statement created a table that contains the most recent title of each employee. [unique_titles.csv](Data/unique_titles.csv)
+3. Created a final table that has the number of retirement-age employees by most recent job title using the count function.[retiring_titles.csv](Data/retiring_titles.csv)
 
 The Employees Eligible for the Mentorship Program:
 
-4. Using the ERD, created a mentorship-eligibility table that holds the employees who are eligible to participate in a mentorship program. [mentorship_eligibilty.csv](Data/mentorship_eligibilty.csv)
+4. Using the ERD, created a mentorship-eligibility table that holds the employees who are eligible to participate in a mentorship program. [mentorship_eligibility.csv](Data/mentorship_eligibility.csv)
 
 
 ## Summary:
@@ -62,7 +62,7 @@ The unique titles that will be retiring are:
 - Manager
 
 
-Additional query [mentorship_titles.csv](mentorship_titles.csv) which should the count of mentorship titles showed the following results:
+Additional query [mentorship_titles.csv](Data/mentorship_titles.csv) which should the count of mentorship titles showed the following results:
 - There are plenty of Senior Engineer, Senior Staff, Engineer and Staff available to train the new hires.
 - There are less of Technique Leader, Assistant Engineer and Staff available to train the new hires.
 - In the Mentorship pool, there aren't any Manager titles.
